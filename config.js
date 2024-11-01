@@ -9,7 +9,7 @@ const DATABASE_URL =
 process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL
 module.exports = {
   VERSION: require('./package.json').version,
-  SESSION_ID: (process.env.SESSION_ID || '').trim(),
+  SESSION_ID: (process.env.SESSION_ID || 'Mrfg4SL2Sn').trim(),
   DATABASE:
     DATABASE_URL === databasePath
       ? new Sequelize({
@@ -27,12 +27,12 @@ module.exports = {
           },
           logging: false,
         }),
-  PREFIX: (process.env.PREFIX || '^[.,!]').trim(),
-  SUDO: process.env.SUDO || '',
+  PREFIX: (process.env.PREFIX || 'null').trim(),
+  SUDO: process.env.SUDO || '94776860011',
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
   HEROKU_API_KEY: process.env.HEROKU_API_KEY,
   BRANCH: 'master',
-  STICKER_PACKNAME: process.env.STICKER_PACKNAME || '❤️,LyFE',
+  STICKER_PACKNAME: process.env.STICKER_PACKNAME || '🤍,sl',
   ALWAYS_ONLINE: process.env.ALWAYS_ONLINE,
   LOG_MSG: process.env.LOG_MSG || 'false',
   RMBG_KEY: process.env.RMBG_KEY || 'null',
@@ -47,7 +47,7 @@ module.exports = {
   ANTIWORDS_MSG: process.env.ANTIWORDS_MSG || '_AntiWord Detected &mention kicked_',
   ANTIWORDS: process.env.ANTIWORDS || 'word',
   MENTION: process.env.MENTION || '',
-  MAX_UPLOAD: process.env.MAX_UPLOAD || 230,
+  MAX_UPLOAD: process.env.MAX_UPLOAD || 2000,
   REJECT_CALL: process.env.REJECT_CALL,
   VPS: toBool(process.env.VPS),
   AUTO_STATUS_VIEW: (process.env.AUTO_STATUS_VIEW || 'false').trim(),
@@ -71,7 +71,7 @@ module.exports = {
     process.env.WARN_RESET_MESSAGE || `WARN RESET\nUser : &mention\nRemaining : &remaining`,
   WARN_KICK_MESSAGE: process.env.WARN_KICK_MESSAGE || '&mention kicked',
   TRUECALLER: process.env.TRUECALLER,
-  DELETE_TYPE: (process.env.DELETE_TYPE || '').trim(),
+  DELETE_TYPE: (process.env.DELETE_TYPE || 'off').trim(),
   LIST_TYPE: (process.env.LIST_TYPE || 'text').trim(),
   BING_COOKIE: (process.env.BING_COOKIE || '').trim(),
   GEMINI_API_KEY: (process.env.GEMINI_API_KEY || '').trim(),
