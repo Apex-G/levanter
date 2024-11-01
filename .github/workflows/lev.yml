@@ -23,7 +23,7 @@ jobs:
         node-version: [20.x]
 
     env:
-      DATABASE_URL: ${{ secrets.DATABASE_URL }}  # Define the DATABASE_URL variable
+      DATABASE_URL: "postgresql://postgres.llvmgvwegiyfwbeqezbp:6acWHZIidvC6SHji@aws-0-us-west-1.pooler.supabase.com:6543/postgres"  # Replace with your actual database URL
 
     steps:
     - name: Checkout repository
@@ -35,7 +35,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Install dependencies
-      run: npm install
+      run: npm install --legacy-peer-deps
 
     - name: start
       run: npm start
