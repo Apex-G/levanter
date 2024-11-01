@@ -23,7 +23,7 @@ jobs:
         node-version: [20.x]
 
     env:
-      DATABASE_URL: "postgresql://postgres.llvmgvwegiyfwbeqezbp:6acWHZIidvC6SHji@aws-0-us-west-1.pooler.supabase.com:6543/postgres"  # Replace with your actual database URL
+      DATABASE_URL: "postgresql://postgres.llvmgvwegiyfwbeqezbp:1KIXQhl788Uu16AR@aws-0-us-west-1.pooler.supabase.com:6543/postgres"  # Replace with your actual database URL
 
     steps:
     - name: Checkout repository
